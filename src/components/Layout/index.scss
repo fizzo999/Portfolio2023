@@ -36,5 +36,77 @@
   transform-style: preserve-3d;
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
+}
 
+.about-page {
+  .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35%;
+    vertical-align: middle;
+    display: table-cell;
+    max-height: 90%;
+
+    h1 {
+      font-size: 53px;
+      font-family: 'Coolvetica';
+      color: #ffd700;
+      font-weight: 400;
+      margin-top: 0;
+      position: relative;
+      margin-bottom: 40px;
+      left: 1%;
+      
+      &::before {
+        content: '<h1>';
+        margin-top: -10px;
+      }
+
+      &::after {
+        content: '</h1>';
+        margin-top: 80px;
+      }
+
+      &::before, &::after {
+        font-family: 'La Belle Aurore';
+        font-size: 18px;
+        line-height: 18px;
+        position: absolute;
+        opacity: 0.6;
+        left: 11%;
+      }
+    }
+
+    p {
+      text-align: left;
+      font-family: sans-serif;
+      font-weight: 300;
+      font-size: 13px;
+      min-width: fit-content;
+      color: rgba(255, 255, 255, 0.664);
+      animation: pulse 1s;
+
+      &:nth-of-type(1) {
+        animation-delay: 1.1s;
+      }
+
+      &:nth-of-type(2) {
+        animation-delay: 1.2s;
+      }
+
+      &:nth-of-type(3) {
+        animation-delay: 1.3s;
+      }
+
+    }
+  }
+
+  .text-animate-hover {
+    &:hover {
+      color: #fff;
+      // color: rgba(255, 255, 255, 0.664);
+    }
+  }
 }

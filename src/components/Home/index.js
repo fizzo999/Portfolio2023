@@ -9,38 +9,41 @@ import LogoSlobodan from './LogoSlobodan';
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
-  const greetingArray = ['m', 'y', ' ', 'n', 'a', 'm', 'e', ' ', 'i', 's'];
-  const nameArray = [
-    'F',
-    'i',
-    'z',
-    'z',
-    'o',
-    ' ',
-    'P',
-    'a',
-    'n',
-    'n',
-    'o',
-    's',
-    'c',
-    'h',
-  ];
-  const jobArray = [
-    'w',
-    'e',
-    'b',
-    ' ',
-    'd',
-    'e',
-    'v',
-    'e',
-    'l',
-    'o',
-    'p',
-    'e',
-    'r',
-  ];
+  // const greetingArray = ['m', 'y', ' ', 'n', 'a', 'm', 'e', ' ', 'i', 's'];
+  const greetingArray = 'my name is'.split('');
+  // const nameArray = [
+  //   'F',
+  //   'i',
+  //   'z',
+  //   'z',
+  //   'o',
+  //   ' ',
+  //   'P',
+  //   'a',
+  //   'n',
+  //   'n',
+  //   'o',
+  //   's',
+  //   'c',
+  //   'h',
+  // ];
+  const nameArray = 'Fizzo Pannosch'.split('');
+  // const jobArray = [
+  //   'w',
+  //   'e',
+  //   'b',
+  //   ' ',
+  //   'd',
+  //   'e',
+  //   'v',
+  //   'e',
+  //   'l',
+  //   'o',
+  //   'p',
+  //   'e',
+  //   'r',
+  // ];
+  const jobArray = 'web developer'.split('');
 
   setTimeout(() => {
     setLetterClass('text-animate-hover');
