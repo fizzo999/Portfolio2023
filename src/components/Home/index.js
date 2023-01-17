@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 // import myPicture from '../../../src/assets/images/FizzoPannosch_Thank_You.gif';
-import LogoTitle from '../../assets/images/logo-s.png';
+// import LogoTitle from '../../assets/images/logo-s.png';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
+// import Logo from './Logo';
+import LogoSlobodan from './LogoSlobodan';
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -76,6 +78,8 @@ const Home = () => {
           CONTACT ME
         </Link>
       </div>
+      {/* <Logo /> */}
+      <LogoSlobodan />
     </div>
   );
 };
