@@ -19,7 +19,7 @@
   font-family: 'La Belle Aurore';
 }
 
-.bottom-tags-html {
+.bottom-tag-html {
   margin-left: -20px;
 }
 
@@ -38,7 +38,8 @@
   animation-delay: 1s;
 }
 
-.about-page {
+.about-page,
+.contact-page {
   .text-zone {
     position: absolute;
     left: 10%;
