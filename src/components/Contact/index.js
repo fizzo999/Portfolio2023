@@ -1,14 +1,40 @@
-import { Fragment, useState } from 'react';
+import { Fragment, useState, useRef } from 'react';
 import Loader from 'react-loaders';
+import emailjs from '@emailjs/browser';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
 
+  const refForm = useRef();
+
   setTimeout(() => {
     setLetterClass('text-animate-hover');
   }, 3000);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        refForm.current,
+        process.env.REACT_APP_EMAILJS_PUBLICKEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert('Message sent successfully');
+          window.location.reload(false);
+        },
+        (error) => {
+          console.log(error.text);
+          alert('Failed to send the message, please try again');
+        }
+      );
+  };
 
   return (
     <Fragment>
@@ -28,12 +54,12 @@ const Contact = () => {
             dignissimos repellendus.
           </p>
           <div className="contact-form">
-            <form>
+            <form ref={refForm} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
                   <input
                     type="text"
-                    name="name"
+                    name="user_name"
                     id=""
                     placeholder="Name"
                     required
@@ -42,7 +68,7 @@ const Contact = () => {
                 <li className="half">
                   <input
                     type="email"
-                    name="email"
+                    name="user_email"
                     id=""
                     placeholder="Email"
                     required
