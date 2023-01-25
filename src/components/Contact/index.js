@@ -3,6 +3,7 @@ import Loader from 'react-loaders';
 import emailjs from '@emailjs/browser';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -92,6 +93,24 @@ const Contact = () => {
               </ul>
             </form>
           </div>
+        </div>
+        <div className="info-map">
+          Fizzo Pannosch,
+          <br />
+          Olympia, WA <br />
+          USA <br />
+          <span>friedrichpannosch@yahoo.com</span>
+        </div>
+        <div className="map-wrap">
+          <MapContainer center={[47.035942, -122.904445]} zoom={13}>
+            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+            <Marker position={[47.035942, -122.904445]}>
+              <Popup>
+                This is our beautiful WA state capitol. I live close by. Contact
+                me and we can grab a cup of coffee and walk around capitol lake
+              </Popup>
+            </Marker>
+          </MapContainer>
         </div>
       </div>
       <Loader type="pacman" />
