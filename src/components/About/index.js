@@ -2,8 +2,6 @@ import {
   faAngular,
   faCss3,
   faGit,
-  faGitAlt,
-  faGitSquare,
   faHtml5,
   faJsSquare,
   faReact,
