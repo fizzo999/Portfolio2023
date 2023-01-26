@@ -12,14 +12,19 @@ const FlipCard = () => {
             <div className="side Fizzo_001"></div>
             <div className="side back">
               <div>
-                <h3>About Fizzo Pannosch the software developer</h3>
-                <p>
-                  Fullstack JavaScript developer with a background in
-                  Hospitality, Production Managment, Nutrition and Gardening.
-                  Passionate about writing accessible, intuitive, and easy to
-                  read code. I want to build products that are inspiring,
-                  improving the lives of people and are future forward.
-                </p>
+                <h3>
+                  I am a Fullstack JavaScript developer with a background in
+                  <ul>
+                    <li>Hospitality,</li>
+                    <li>Production Managment,</li>
+                    <li>Digital Event Photography,</li>
+                    <li>Nutrition and </li>
+                    <li>Gardening.</li>
+                  </ul>
+                  I am passionate about writing accessible, intuitive, and easy
+                  to read code. I am building products and services that are
+                  beautiful, inspiring and are future forward.
+                </h3>
               </div>
               <div className="connect">
                 <a

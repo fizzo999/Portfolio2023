@@ -52,7 +52,11 @@ const Home = () => {
         </div>
         <div className="right-side-home">
           <div className="gradient-border" id="box">
-            <h2>hover over my picture</h2>
+            <h2>
+              hover over my picture
+              <br />
+              for more info
+            </h2>
             <FlipCard />
           </div>
         </div>
