@@ -1,6 +1,8 @@
 .home-page {
   
   .text-zone {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     left: 10%;
     top: 50%;
@@ -15,7 +17,7 @@
     font-size: 53px;
     font-family: 'Coolvetica';
     letter-spacing: 0.5rem;
-    text-align: left;
+    // text-align: center;
     font-weight: 400;
     text-shadow:  0 0 5px #fff,
                   0 0 10px #fff, 
@@ -43,28 +45,36 @@
     font-size: 11px;
     font-family: sans-serif;
     letter-spacing: 3px;
-    text-align: left;
+    // text-align: left;
     animation: fadeIn 1s 1.8s backwards;
 
   }
 
   .flat-button {
     color: #ffd700;
-    font-size: 13px;
+    // font-size: 13px;
     font-weight: 400;
     letter-spacing: 4px;
-    font-family: sans-serif;
+    // font-family: sans-serif;
     text-decoration: none;
     padding: 10px 18px;
-    border: 1px solid #ffd700;
+    border: 0.25rem solid #6fba82;
     margin-top: 25px;
-    float: left;
+    // float: left;
     animation: fadeIn 1s 1.8s backwards;
     white-space:nowrap;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Verdana';
+    color: #ffffcc;
+    text-shadow: 0 0 5px #fff,
+                 0 0 10px #fff, 
+                 0 0 20px green; 
 
     &:hover {
       background-color: #ffd700;
       color: #333;
+      transition: all 0.6s ease-in-out;
     }
   }
 
