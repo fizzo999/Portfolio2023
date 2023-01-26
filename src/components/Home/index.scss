@@ -150,5 +150,33 @@
   }
 
   
+  
+}
+
+@media only screen and (max-width: 1072px) {
+  body {
+    overflow: visible;
+    float: clear;
+  }
+  .container,
+  .home-page {
+    background-color: #ef4e7b;
+    display: grid;
+    grid-template-columns: 200% 40%;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+
+    .text-zone {
+      width: 80%;
+    }
+
+    .right-side-home {
+      position:unset;
+    }
+  }
+
+
 
 }

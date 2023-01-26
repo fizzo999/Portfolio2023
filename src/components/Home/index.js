@@ -22,17 +22,12 @@ const Home = () => {
       <div className="container home-page">
         <div className="text-zone animate__animated">
           <h1>
-            {/* <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}>i,</span>
-            <br /> */}
             <AnimatedLetters
               letterClass={letterClass}
               strArray={greetingArray}
               idx={13}
             />
             <br />
-            {/* <img src={myPicture} alt="developer" style={{}} /> */}
-            {/* <img src={LogoTitle} alt="developer" style={{}} /> */}
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
