@@ -11,42 +11,18 @@
   }
   
   h1 {
-    color: #fff;
+    color: #ffffcc;
     font-size: 53px;
-    margin: 0 0 0  30px;
     font-family: 'Coolvetica';
+    letter-spacing: 0.5rem;
     text-align: left;
     font-weight: 400;
-    letter-spacing: 0.5rem;
-    color: #ffffcc;
-    text-shadow: 0 0 5px #fff,
-                 0 0 10px #fff, 
-                 0 0 20px green;
+    text-shadow:  0 0 5px #fff,
+                  0 0 10px #fff, 
+                  0 0 20px green;
+    margin: 0 0 0  30px;
 
-    &::before {
-      content: '<h1>';
-      font-family: 'La Belle Aurore';
-      color: #ffd700;
-      font-size: 18px;
-      position: absolute;
-      margin-top: -10px;
-      left: 15px;
-      opacity: 0.6;
-
-    }
-
-    &::after {
-      content: '</h1>';
-      font-family: 'La Belle Aurore';
-      color: #ffd700;
-      font-size: 18px;
-      position: absolute;
-      margin-top: 68px;
-      left: 15px;
-      animation: fadeIn 1s 1.7s backwards;
-      opacity: 0.6;
-
-    }
+}
 
     img {
       width: 32px;
@@ -57,7 +33,7 @@
       animation: rotateIn 1s linear both;
       animation-delay: 1.4s;
     }
-  }
+  
 
   h2 {
     color: #8d8d8d;

@@ -1,10 +1,10 @@
 import './index.scss';
-import LogoF from '../../../assets/images/Letter_F.png';
+// import LogoF from '../../../assets/images/Letter_F.png';
 
 const Logo = () => {
   return (
     <div className="logo-container">
-      <img src={LogoF} alt="the letter F" className="solid-logo" />
+      {/* <img src={LogoF} alt="the letter F" className="solid-logo" /> */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
