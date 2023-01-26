@@ -1,12 +1,10 @@
 import React, { Fragment, useState } from 'react';
 import Loader from 'react-loaders';
 import { Link } from 'react-router-dom';
-// import myPicture from '../../../src/assets/images/FizzoPannosch_Thank_You.gif';
-// import LogoTitle from '../../assets/images/logo-s.png';
+
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
-// import Logo from './Logo';
-// import LogoSlobodan from './LogoSlobodan';
+import FlipCard from './FlipCard';
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -54,13 +52,11 @@ const Home = () => {
         </div>
         <div className="right-side-home">
           <div className="gradient-border" id="box">
-            <h2>hello there</h2>
+            <h2>hover over my picture</h2>
+            <FlipCard />
           </div>
         </div>
-        {/* <Logo /> */}
-        {/* <LogoSlobodan /> */}
       </div>
-      {/* <Loader type="ball-scale-ripple-multiple" /> */}
       <Loader type="pacman" />
     </Fragment>
   );
