@@ -11,9 +11,9 @@ import './index.scss';
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
 
-  const greetingArray = 'my name is'.split('');
+  const greetingArray = 'Hi, my name is'.split('');
   const nameArray = 'Fizzo Pannosch'.split('');
-  const jobArray = 'web developer'.split('');
+  const jobArray = 'I am a web developer'.split('');
 
   setTimeout(() => {
     setLetterClass('text-animate-hover');
@@ -24,16 +24,16 @@ const Home = () => {
       <div className="container home-page">
         <div className="text-zone animate__animated">
           <h1>
-            <span className={letterClass}>H</span>
+            {/* <span className={letterClass}>H</span>
             <span className={`${letterClass} _12`}>i,</span>
-            <br />
+            <br /> */}
             <AnimatedLetters
               letterClass={letterClass}
               strArray={greetingArray}
               idx={13}
             />
             <br />
-            {/* <img src={myPicture} alt="developer" style={{}}/> */}
+            {/* <img src={myPicture} alt="developer" style={{}} /> */}
             {/* <img src={LogoTitle} alt="developer" style={{}} /> */}
             <AnimatedLetters
               letterClass={letterClass}
@@ -44,13 +44,18 @@ const Home = () => {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={jobArray}
-              idx={22}
+              idx={15}
             />
           </h1>
           <h2>Frontend Developer / JavaScript Expert / React Expert </h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
+        </div>
+        <div className="right-side-home">
+          <div className="gradient-border" id="box">
+            <h2>hello there</h2>
+          </div>
         </div>
         {/* <Logo /> */}
         {/* <LogoSlobodan /> */}
