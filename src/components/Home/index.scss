@@ -1,13 +1,19 @@
 .home-page {
+  display: flex;
+  flex-direction: row;
   
   .text-zone {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    left: 10%;
-    top: 50%;
-    transform: translateY(-50%);
+    // position: absolute;
+    // left: 10%;
+    // top: 50%;
+    // transform: translateY(-50%);
     width: 40%;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-right: 5%;
+    margin-bottom: 5%;
     max-height: 90%;
 
   }
@@ -26,15 +32,15 @@
 
 }
 
-    img {
-      width: 32px;
-      margin-left: 20px;
-      margin-right: 5px;
-      opacity: 0;
-      height: auto;
-      animation: rotateIn 1s linear both;
-      animation-delay: 1.4s;
-    }
+    // img {
+    //   width: 32px;
+    //   margin-left: 20px;
+    //   margin-right: 5px;
+    //   opacity: 0;
+    //   height: auto;
+    //   animation: rotateIn 1s linear both;
+    //   animation-delay: 1.4s;
+    // }
   
 
   h2 {
@@ -82,12 +88,16 @@
     background-color: black;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    right: 5%;
-    top: 5%;
+    // position: absolute;
+    // right: 5%;
+    // top: 5%;
     width: 40%;
     height: 90%;
     border-radius: 10%;
+    // margin-left: 10%;
+    margin-top: 5%;
+    // margin-right: 5%;
+    margin-bottom: 5%;
 
     h2 {
       text-align: center;
@@ -156,24 +166,23 @@
 @media only screen and (max-width: 1072px) {
   body {
     overflow: visible;
-    float: clear;
+    // float: clear;
   }
-  .container,
-  .home-page {
-    background-color: #ef4e7b;
-    display: grid;
-    grid-template-columns: 200% 40%;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
+  .container.home-page {
+    // background-color: #ef4e7b;
+    // display: grid;
+    // grid-template-columns: 200% 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .text-zone {
       width: 80%;
     }
 
     .right-side-home {
-      position:unset;
+      // position:unset;
     }
   }
 
