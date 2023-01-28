@@ -29,6 +29,10 @@ h2 {
   justify-content: center;
 }
 .about-card-container {
+  // height: 100%;
+  // width: 100%;
+  // min-width: 200px;
+  // min-height: 200px;
   height: 400px;
   width: 400px;
   margin: 30px;
@@ -69,8 +73,8 @@ h2 {
   position: relative;
   font-family: 'Coolvetica';
   letter-spacing: 0.15rem;
-  font-size: 1.5rem;
-  line-height: 2.3rem;
+  font-size: 1rem;
+  line-height: 1.4rem;
   text-align: justify;
   padding: 0.5rem 2rem;
 }
@@ -96,3 +100,15 @@ img.social-icon:hover {
   height: 40px;
   margin: 8px;
 }
+
+@media only screen and (max-width: 1072px) {
+  .about-card-container {
+    // height: 100%;
+    // width: 100%;
+    // min-width: 200px;
+    // min-height: 200px;
+    height: 200px;
+    width: 200px;
+  }
+
+ }
