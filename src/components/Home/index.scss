@@ -179,10 +179,16 @@
 
     .text-zone {
       width: 80%;
+
+      .flat-button {
+        margin-left: 15%;
+      }
     }
 
     .right-side-home {
       // position:unset;
+      width: 75%;
+      margin-left: 15%;
     }
   }
 
