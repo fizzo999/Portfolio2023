@@ -98,16 +98,20 @@
   }
 }
 
-@media only screen and (max-width: 1072px) {
+@media only screen and (max-width: 1167px) {
   .about-page,
   .contact-page {
     display: flex;
     flex-direction: column;
     .text-zone,
-    .map-wrap  {
+    .map-wrap,
+    .stage-cube-cont {
       width: 86%;
       margin-left: 10%;
       margin-right: 4%;  
+   }
+   .stage-cube-cont {
+    margin-top: 1%;
    }   
   }
   .contact-page {

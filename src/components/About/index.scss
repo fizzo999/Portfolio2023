@@ -1,12 +1,17 @@
 .stage-cube-cont {
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding-top: 18%;
-  margin-left: 0;
-  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40vw;
+  height: auto;
+  margin-top: -40vh;
+  // height: 100%;
+  // position: absolute;
+  // top: 0;
+  // right: 0;
+  // padding-top: 5%;
+  // margin-left: 0;
+  // overflow: hidden;
 
   .face1 {
     transform: translateZ(100px)
