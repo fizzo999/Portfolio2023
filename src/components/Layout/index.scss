@@ -29,15 +29,29 @@
 
 .about-page,
 .contact-page {
+  display: flex;
+  flex-direction: row;
+
   .text-zone {
-    position: absolute;
-    left: 10%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 35%;
-    vertical-align: middle;
-    display: table-cell;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-right: 5%;
+    margin-bottom: 5%;
     max-height: 90%;
+
+  }
+  .text-zone {
+    // position: absolute;
+    // left: 10%;
+    // top: 50%;
+    // transform: translateY(-50%);
+    // width: 35%;
+    // vertical-align: middle;
+    // display: table-cell;
+    // max-height: 90%;
 
     h1 {
       font-size: 53px;
@@ -80,6 +94,38 @@
     &:hover {
       color: #fff;
       // color: rgba(255, 255, 255, 0.664);
+    }
+  }
+}
+
+@media only screen and (max-width: 1072px) {
+  .about-page,
+  .contact-page {
+    display: flex;
+    flex-direction: column;
+    .text-zone,
+    .map-wrap  {
+      width: 86%;
+      margin-left: 10%;
+      margin-right: 4%;  
+   }   
+  }
+  .contact-page {
+    .info-map {
+      position: absolute;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Helvetica';
+      font-size: 1.1vw;
+      font-weight: 300;  
+      top: 70vh;
+      right: 10vw;
+      width: 15.5vw;
+      padding: 1.2vw;
+      z-index: 9999;
+      opacity: 0;
+      animation: fadeIn 1s 1.5s;
+      animation-fill-mode: forwards;
     }
   }
 }
