@@ -82,7 +82,7 @@ h2 {
 .connect {
   position: absolute;
   bottom: 10px;
-  left: 120px;
+  left: 35%;
 }
 
 img.social-icon {
@@ -107,9 +107,54 @@ img.social-icon:hover {
     // width: 100%;
     // min-width: 200px;
     // min-height: 200px;
-    height: 275px;
-    width: 275px;
+    // height: 275px;
+    // width: 275px;
     // margin: 3%;
+  }
+  .about-card .back {
+    font-family: 'Coolvetica';
+    letter-spacing: 0.15rem;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+
   }
 
  }
+
+ @media only screen and (max-width: 600px) {
+  .about-card-container {
+    height: 275px;
+    width: 275px;
+  }
+
+  .about-card .back {
+    font-family: 'Coolvetica';
+    letter-spacing: 0.10rem;
+    font-size: 0.6rem;
+    line-height: 0.9rem;
+  }
+
+  .connect {
+    position: absolute;
+    left: 25%;
+  }
+}
+
+ @media only screen and (max-width: 390px) {
+  .about-card-container {
+    height: 230px;
+    width: 230px;
+  }
+
+  .about-card .back {
+    font-family: 'Coolvetica';
+    letter-spacing: 0.08rem;
+    font-size: 0.5rem;
+    line-height: 0.6rem;
+  }
+
+  .connect {
+    position: absolute;
+    left: 25%;
+  }
+}
