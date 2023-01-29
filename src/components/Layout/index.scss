@@ -56,12 +56,19 @@
     h1 {
       font-size: 53px;
       font-family: 'Coolvetica';
-      color: #ffd700;
+      // color: #ffd700;
       font-weight: 400;
-      margin-top: 0;
+      // margin-top: 0;
       position: relative;
-      margin-bottom: 40px;
-      left: 1%;
+      // margin-bottom: 40px;
+      // left: 1%;
+
+      color: #ffffcc;
+      letter-spacing: 0.5rem;
+      text-shadow:  0 0 5px #fff,
+                    0 0 10px #fff, 
+                    0 0 20px green;
+      margin: 0 0 0  30px;
       
 
     }

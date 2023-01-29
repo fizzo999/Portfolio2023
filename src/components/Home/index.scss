@@ -78,9 +78,10 @@
                  0 0 20px green; 
 
     &:hover {
-      background-color: #ffd700;
+      background-color: #ffffcc;
       color: #333;
-      transition: all 0.6s ease-in-out;
+      font-weight: 800;
+      transition: all 0.9s ease-in-out;
     }
   }
 
