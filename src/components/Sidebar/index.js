@@ -3,12 +3,7 @@ import './index.scss';
 // import LogoF from '../../assets/images/Letter-F-favicon.ico';
 import LogoF from '../../assets/images/F-LOGO-002.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faEnvelope,
-  faHome,
-  faUser,
-  faF,
-} from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
 import {
   faGithub,
   faLinkedin,
