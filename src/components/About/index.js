@@ -9,6 +9,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Fragment, useState } from 'react';
 import Loader from 'react-loaders';
+import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 
@@ -33,29 +34,54 @@ const About = () => {
             />
           </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non optio
-            mollitia magni nostrum, voluptatibus veniam doloribus recusandae
-            quod omnis temporibus id molestias laudantium, eos, ab odio at nulla
-            totam officiis ducimus? Labore laboriosam doloremque quas recusandae
-            nisi aperiam itaque velit incidunt perferendis facilis harum
-            accusamus aspernatur, cupiditate est laborum modi?
+            I come from a diverse professional background:
+            <ul>
+              <li>
+                <p>
+                  I used to own my own event photography company with hundreds
+                  of happy return customers for over 8 years. There I learned
+                  the power of creating trust with my customers through
+                  consistenly execptional quality in my work.
+                </p>
+              </li>
+              <li>
+                <p>
+                  I also used to work as a general manager for a small
+                  nutritional supplement company that produced its own products
+                  with sales in exess of US$1M per year. Adding to my experience
+                  of quality and trust I learned about customer service, sales,
+                  promotions but also about warehouse, inventory and production
+                  management.
+                </p>
+              </li>
+              <li>
+                <p>
+                  I In my most recent adventure I worked as a banquet server and
+                  bartender. There I learned to work under tight deadlines,
+                  working in teams, communicating with event organizers, staff
+                  as well clients - producing countless memorable moments with a
+                  passion for quality of service - always with smile.
+                </p>
+              </li>
+            </ul>
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non optio
-            mollitia magni nostrum, voluptatibus veniam doloribus recusandae
-            quod omnis temporibus id molestias laudantium, eos, ab odio at nulla
-            totam officiis ducimus? Labore laboriosam doloremque quas recusandae
-            nisi aperiam itaque velit incidunt perferendis facilis harum
-            accusamus aspernatur, cupiditate est laborum modi?
+            As a Software Developer I specialize in JavaScript and more
+            specifically react for frontend as well as Express/Node.js for
+            backend development combined with MongoDB or PostgreSQL. Through my
+            training at a local boot camp - CodeFellows - I discovered my new
+            passion for software development. I love building beautiful digital
+            products and I love learning new things, new technology and see it
+            all come together.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non optio
-            mollitia magni nostrum, voluptatibus veniam doloribus recusandae
-            quod omnis temporibus id molestias laudantium, eos, ab odio at nulla
-            totam officiis ducimus? Labore laboriosam doloremque quas recusandae
-            nisi aperiam itaque velit incidunt perferendis facilis harum
-            accusamus aspernatur, cupiditate est laborum modi?
+            I am looking for my next role in software development. Please reach
+            out to contact me with your career opportunity. I am looking forward
+            to meeting you.
           </p>
+          <Link to="/contact" className="flat-button">
+            CONTACT ME
+          </Link>
         </div>
         <div className="stage-cube-cont">
           <div className="cubespinner">

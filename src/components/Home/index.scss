@@ -56,34 +56,32 @@
 
   }
 
-  .flat-button {
-    color: #ffd700;
-    // font-size: 13px;
-    font-weight: 400;
-    letter-spacing: 4px;
-    // font-family: sans-serif;
-    text-decoration: none;
-    padding: 10px 18px;
-    border: 0.25rem solid #6fba82;
-    margin-top: 25px;
-    // float: left;
-    animation: fadeIn 1s 1.8s backwards;
-    white-space:nowrap;
-    text-align: center;
-    font-size: 20px;
-    font-family: 'Verdana';
-    color: #ffffcc;
-    text-shadow: 0 0 5px #fff,
-                 0 0 10px #fff, 
-                 0 0 20px green; 
+  // .flat-button {
+  //   color: #ffd700;
+  //   // font-size: 13px;
+  //   font-weight: 400;
+  //   letter-spacing: 4px;
+  //   text-decoration: none;
+  //   padding: 10px 18px;
+  //   border: 0.25rem solid #6fba82;
+  //   margin-top: 25px;
+  //   animation: fadeIn 1s 1.8s backwards;
+  //   white-space:nowrap;
+  //   text-align: center;
+  //   font-size: 20px;
+  //   font-family: 'Verdana';
+  //   color: #ffffcc;
+  //   text-shadow: 0 0 5px #fff,
+  //                0 0 10px #fff, 
+  //                0 0 20px green; 
 
-    &:hover {
-      background-color: #ffffcc;
-      color: #333;
-      font-weight: 800;
-      transition: all 0.9s ease-in-out;
-    }
-  }
+  //   &:hover {
+  //     background-color: #ffffcc;
+  //     color: #333;
+  //     font-weight: 800;
+  //     transition: all 0.9s ease-in-out;
+  //   }
+  // }
 
   .right-side-home {
     background-color: black;
