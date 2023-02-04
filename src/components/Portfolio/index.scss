@@ -1,0 +1,50 @@
+
+.portfolio-banner {
+  background: url('../../assets/images/Olympia_Capitol_Lake_small.jpg') black no-repeat;
+  background-position: 100% 5%;
+  // border: 5px solid black;
+  font-size:  10vh;
+  font-weight: 900;
+  text-align: center;
+  margin-left: 8vw;
+  padding: 5px;
+  font-family: 'Verdana';
+  color: #ffffcc;
+  text-shadow: none;
+  animation: animatedTextShadow 2s ease-in-out alternate infinite; 
+              //  0 0 40px green, 
+              //  0 0 55px green, 
+              //  0 0 70px green;
+  // -webkit-background-clip: text, border;
+  // background-clip: text, border;
+  // color: transparent;
+
+  .web-dev {
+    display: block;
+    font-size:  8vh;
+    margin-top: -0.5vh;
+
+  }
+}
+
+@keyframes animatedTextShadow {
+  0% {
+    color: rgba(255, 255, 204, 0.95);
+    text-shadow: none;
+    opacity: 0.9
+
+  }
+  50% {
+    color: #ffffcc;
+    text-shadow: 0 0 5px rgb(255, 255, 255),
+    0 0 10px rgb(255, 255, 255), 
+    0 0 20px rgb(0, 128, 0), 
+    0 0 30px rgb(255, 255, 204);
+    opacity: 1;
+  }
+  100% {
+    color: rgba(255, 255, 204, 0.95);
+    text-shadow: none;
+    opacity: 0.9;
+  }
+}
