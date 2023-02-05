@@ -8,25 +8,27 @@
     font-weight: 400;
     letter-spacing: 4px;
     text-decoration: none;
-    padding: 10px 18px;
+    padding: 1vw 2vw;
     border: 0.25rem solid #6fba82;
-    margin-top: 25px;
+    margin-top: 2vh;
     animation: fadeIn 1s 1.8s backwards;
     white-space:nowrap;
     text-align: center;
-    font-size: 20px;
+    font-size: 2vw;
     font-family: 'Verdana';
     color: #ffffcc;
     text-shadow: 0 0 5px #fff,
                  0 0 10px #fff, 
-                 0 0 20px green; 
+                 0 0 20px green;
+    transition: all 0.9s ease-in-out; 
 
     &:hover {
       background-color: #ffffcc;
       color: #333;
-      font-weight: 800;
+      border: 0.25rem solid #ffffcc;
       transition: all 0.9s ease-in-out;
     }
+
   }
 }
 

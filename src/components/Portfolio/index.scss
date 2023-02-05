@@ -55,15 +55,15 @@
 
   // } 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     
     .text-zone {
       display: flex;
       flex-direction: column;
-      width: 100%;
-      margin-left: 10%;
+      width: 88vw;
+      margin-left: 9vw;
       margin-top: 1%;
-      margin-right: 5%;
+      margin-right: 2vw;
       margin-bottom: 5%;
       // max-height: 90%;
   
@@ -82,14 +82,22 @@
       margin: 0 0 0  30px;
   
   }
+  .flat-button {
+    width: 32%;
+    align-self: center;
+    border-radius: 10px;
+
+  }
 
   
 }
 .card-container {
-  width: 100vw;
+  width: 88vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-left: 9vw;
+  margin-right: 2vw;
 }
 

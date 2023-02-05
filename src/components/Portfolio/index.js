@@ -27,7 +27,7 @@ const Portfolio = () => {
         FIZZO PANNOSCH <br />
         <span className="web-dev">WEB DEVELOPER</span>
       </div>
-      <div className="container portfolio-page">
+      <div className="portfolio-page">
         <div className="text-zone animate__animated">
           <h1>
             <AnimatedLetters
@@ -42,8 +42,8 @@ const Portfolio = () => {
           </Link>
         </div>
         <div className="card-container">
-          {videoArray.map((eachVideo) => {
-            return <Card video={eachVideo} />;
+          {videoArray.map((eachVideo, idx) => {
+            return <Card key={`card_${idx}`} video={eachVideo} />;
           })}
         </div>
       </div>
