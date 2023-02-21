@@ -59,6 +59,15 @@ const Sidebar = () => {
           <FontAwesomeIcon icon={faImage} color="#4d4d4e" />
           {/* <FontAwesomeIcon icon="fa-solid fa-image"/> */}
         </NavLink>
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="portfolio-link"
+          to="/newportfolio"
+        >
+          <FontAwesomeIcon icon={faImage} color="#4d4d4e" />
+          {/* <FontAwesomeIcon icon="fa-solid fa-image"/> */}
+        </NavLink>
       </nav>
       <ul>
         <li>

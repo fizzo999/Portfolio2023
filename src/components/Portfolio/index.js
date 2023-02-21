@@ -15,7 +15,7 @@ import video5 from '../../assets/images/storeFront.mp4';
 const Portfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
 
-  const videoArray = [video1, video2, video3, video4, video5];
+  const mp4Array = [video1, video2, video3, video4, video5];
 
   setTimeout(() => {
     setLetterClass('text-animate-hover');
@@ -42,8 +42,8 @@ const Portfolio = () => {
           </Link>
         </div>
         <div className="card-container">
-          {videoArray.map((eachVideo, idx) => {
-            return <Card key={`card_${idx}`} video={eachVideo} />;
+          {mp4Array.map((eachMp4, idx) => {
+            return <Card key={`card_${idx}`} mp4={eachMp4} />;
           })}
         </div>
       </div>

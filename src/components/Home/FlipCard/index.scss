@@ -28,6 +28,7 @@ h2 {
   display: flex;
   justify-content: center;
 }
+
 .about-card-container {
   height: 400px;
   width: 400px;
@@ -37,6 +38,7 @@ h2 {
   justify-content: center;
   display: flex;
 }
+
 .about-img {
   height: 390px;
   border-radius: 10px;
@@ -52,15 +54,18 @@ h2 {
   border-radius: 10px;
   display: flex;
 }
+
 .about-card:hover {
   transform: rotateY(180deg);
 }
+
 .about-card .side {
   backface-visibility: hidden;
   height: 100%;
   position: absolute;
   width: 100%;
 }
+
 .about-card .back {
   transform: rotateY(180deg);
   background: linear-gradient(purple, khaki);
@@ -106,9 +111,9 @@ img.social-icon:hover {
 
   }
 
- }
+}
 
- @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .about-card-container {
     height: 275px;
     width: 275px;
@@ -123,7 +128,7 @@ img.social-icon:hover {
 
 }
 
- @media only screen and (max-width: 390px) {
+@media only screen and (max-width: 390px) {
   .about-card-container {
     height: 230px;
     width: 230px;

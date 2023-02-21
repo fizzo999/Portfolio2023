@@ -3,3 +3,12 @@
   padding: 1vw;
   box-shadow: 6px 6px 24px 12px rgba(121, 121, 121, 0.145);
 }
+
+.projectSide {
+  display: flex;
+}
+
+.projectSide video {
+  border-radius: 10px;
+  // border: thin black solid;
+}
