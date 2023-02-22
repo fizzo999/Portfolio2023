@@ -30,12 +30,16 @@ const NewPortfolio = () => {
           </div>
         </div>
         <Tilt style={{}} options='glare: true'>
-          <div className="box" >
+          <div className="box" >            
             <div className="elements gh">
-              <FontAwesomeIcon icon={faGithub} className="fab fa-github fa-fw fa-4x fa-beat-fade githubIcon"/>
-            </div>
+              <a href="https://github.com/fizzo999/movies-list-front-end" target="_blank" rel="noreferrer" >
+                <FontAwesomeIcon icon={faGithub} className="fab fa-github fa-fw fa-4x fa-beat-fade githubIcon"  title="click to see it on GitHub..."/>
+              </a>
+            </div>            
             <div className="elements imgBox">
-              <img src={FavoriteMoviesListAPP} alt="Favorite Movies List APP" title="search for your favorite movies and add them to a list..."/>
+              <a href="https://favorite-movie-list.netlify.app/" target="_blank" rel="noreferrer" >
+                <img src={FavoriteMoviesListAPP} alt="Favorite Movies List APP" title="search for your favorite movies and add them to a list... &#13;click to go to the deployed site"/>
+              </a>
             </div>
             <div className="elements projectName">
               <h2 title="click to learn more...">Favorite Movies List APP</h2>
