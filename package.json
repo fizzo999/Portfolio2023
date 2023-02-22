@@ -17,6 +17,7 @@
     "react-dom": "^18.2.0",
     "react-leaflet": "^4.2.0",
     "react-loaders": "^3.0.1",
+    "react-parallax-tilt": "^1.7.107",
     "react-router-dom": "^6.6.2",
     "react-scripts": "^5.0.1",
     "react-vanilla-tilt": "^1.0.0",
