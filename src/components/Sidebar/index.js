@@ -7,6 +7,7 @@ import {
   faEnvelope,
   faHome,
   faImage,
+  faRocket,
   faUser,
 } from '@fortawesome/free-solid-svg-icons';
 import {
@@ -50,15 +51,14 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
-        <NavLink
+        {/* <NavLink
           exact="true"
           activeclassname="active"
           className="portfolio-link"
           to="/portfolio"
         >
           <FontAwesomeIcon icon={faImage} color="#4d4d4e" />
-          {/* <FontAwesomeIcon icon="fa-solid fa-image"/> */}
-        </NavLink>
+        </NavLink> */}
         <NavLink
           exact="true"
           activeclassname="active"
@@ -66,6 +66,14 @@ const Sidebar = () => {
           to="/newportfolio"
         >
           <FontAwesomeIcon icon={faImage} color="#4d4d4e" />
+        </NavLink>
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="rocketLoader-link"
+          to="/rocketloader"
+        >
+          <FontAwesomeIcon icon={faRocket} color="#4d4d4e" />
           {/* <FontAwesomeIcon icon="fa-solid fa-image"/> */}
         </NavLink>
       </nav>

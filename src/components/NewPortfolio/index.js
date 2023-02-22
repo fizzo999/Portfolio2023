@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
 
@@ -9,15 +9,25 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import FavoriteMoviesListAPP from '../../assets/images/mimzy.JPG';
 import movieProjector from '../../assets/images/movie-projector.gif';
+import RocketLoader from '../RocketLoader';
 
 const NewPortfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
+  const [isLoading, setIsLoading] = useState(false);
 
   setTimeout(() => {
     setLetterClass('text-animate-hover');
   }, 4000);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(true);
+    }, 3000);
+  }, []);
+
   return (
+    <Fragment>
+      {!isLoading ? <RocketLoader/> : 
       <div className="glassCardContainer">
         <div className="portfolio-page">
           <div className="text-zone animate__animated">
@@ -59,7 +69,8 @@ const NewPortfolio = () => {
         <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
-      </div>    
+      </div>}
+    </Fragment>
   )
 }
 

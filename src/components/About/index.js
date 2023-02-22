@@ -40,8 +40,8 @@ const About = () => {
                 <p>
                   I used to own my own event photography company with hundreds
                   of happy return customers for over 8 years. There I learned
-                  the power of creating trust with my customers through
-                  consistenly execptional quality in my work.
+                  the power of creating trust with my customers by providing 
+                  consistenly exceptional quality in my work.
                 </p>
               </li>
               <li>
@@ -60,7 +60,7 @@ const About = () => {
                   bartender. There I learned to work under tight deadlines,
                   working in teams, communicating with event organizers, staff
                   as well clients - producing countless memorable moments with a
-                  passion for quality of service - always with smile.
+                  passion for quality of service - always with a smile.
                 </p>
               </li>
             </ul>
@@ -69,9 +69,9 @@ const About = () => {
             As a Software Developer I specialize in JavaScript and more
             specifically react for frontend as well as Express/Node.js for
             backend development combined with MongoDB or PostgreSQL. Through my
-            training at a local boot camp - CodeFellows - I discovered my new
+            training at a local boot camp - CodeFellows in Seattle - I discovered my new
             passion for software development. I love building beautiful digital
-            products and I love learning new things, new technology and see it
+            products and I love learning new things, new technologies and see it
             all come together.
           </p>
           <p>

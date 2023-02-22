@@ -6,6 +6,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 import NewPortfolio from './components/NewPortfolio';
+import RocketLoader from './components/RocketLoader';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/newportfolio" element={<NewPortfolio />} />
+        <Route path="/rocketloader" element={<RocketLoader />} />
       </Route>
     </Routes>
   );
