@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
 
-import Tilt from 'react-vanilla-tilt'
+import Tilt from 'react-vanilla-tilt';
 import './index.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -32,7 +32,7 @@ const NewPortfolio = () => {
         </div>
         <Tilt style={{}} options='glare: true'>
           <div className="box" >
-            <div className="elements bg"><FontAwesomeIcon icon={faGithub} className="fab fa-github fa-fw fa-2x fa-beat-fade"/></div>
+            <div className="elements bg"><FontAwesomeIcon icon={faGithub} className="fab fa-github fa-fw fa-4x fa-beat-fade githubIcon"/></div>
             <div className="card"></div>
           </div>
         </Tilt>

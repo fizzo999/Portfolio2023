@@ -75,10 +75,13 @@
   align-items: center;
   justify-content: center;
 
-  i {
-    padding: 0;
-    margin: 0;
-    transform: scale(2) !important;
+  .githubIcon path {
+    fill: rgba(255, 255, 204, 0.7);
+    opacity: 0;
+    transition: 0.5s;
   }
+}
 
+.box:hover .elements.bg .githubIcon path {
+  opacity: 0.7;
 }
