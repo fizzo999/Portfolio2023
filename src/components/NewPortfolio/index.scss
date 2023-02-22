@@ -13,6 +13,7 @@
   background: url('../../assets/images/bg1.jpg');
   background-size: cover;
   background-position: center;
+  perspective: 6000px;
 
   .portfolio-page {
     flex-direction: column;
@@ -70,10 +71,13 @@
   box-shadow: 0 15px 45px rgba(0, 0, 0, 0.5);
 }
 
-.elements.bg {
+.elements.gh {
   display: flex;
   align-items: center;
   justify-content: center;
+  left: -230px;
+  transition: 0.9s;
+  opacity: 0;
 
   .githubIcon path {
     fill: rgba(255, 255, 204, 0.7);
@@ -82,6 +86,71 @@
   }
 }
 
-.box:hover .elements.bg .githubIcon path {
+.box:hover .elements.gh .githubIcon path {
   opacity: 0.7;
+}
+
+.box:hover .elements.gh {
+  left: -30px;
+  opacity: 1;
+}
+
+.elements.imgBox {
+  top: -200px;
+  left: initial;
+  right: 60px;
+  width: 120px;
+  height: 180px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  transition: 0.9s;
+  opacity: 0;
+
+  img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: 0.9s;
+    transition-delay: 0.5s;
+  }
+}
+
+.box:hover .elements.imgBox {
+  top: -20px;
+  opacity: 1;
+}
+
+.box:hover .elements.imgBox img {
+  opacity: 1;
+}
+
+.elements.projectName {
+  top: 335px;
+  left: initial;
+  right: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 10px 0;
+  margin: 0;
+  border-radius: 25px;
+  color: rgba(255, 255, 204, 1);
+  text-shadow: 0 0 5px #fff;
+  cursor: pointer;
+  transition: 0.9s;
+  opacity: 0;
+}
+
+.box:hover .elements.projectName {
+  top: 235px;
+  opacity: 1;
 }

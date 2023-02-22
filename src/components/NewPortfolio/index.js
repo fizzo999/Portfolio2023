@@ -5,9 +5,8 @@ import AnimatedLetters from '../AnimatedLetters';
 import Tilt from 'react-vanilla-tilt';
 import './index.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faGithub
-} from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import FavoriteMoviesListAPP from '../../assets/images/mimzy.JPG';
 
 const NewPortfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -32,7 +31,15 @@ const NewPortfolio = () => {
         </div>
         <Tilt style={{}} options='glare: true'>
           <div className="box" >
-            <div className="elements bg"><FontAwesomeIcon icon={faGithub} className="fab fa-github fa-fw fa-4x fa-beat-fade githubIcon"/></div>
+            <div className="elements gh">
+              <FontAwesomeIcon icon={faGithub} className="fab fa-github fa-fw fa-4x fa-beat-fade githubIcon"/>
+            </div>
+            <div className="elements imgBox">
+              <img src={FavoriteMoviesListAPP} alt="Favorite Movies List APP" title="search for your favorite movies and add them to a list..."/>
+            </div>
+            <div className="elements projectName">
+              <h2 title="click to learn more...">Favorite Movies List APP</h2>
+            </div>
             <div className="card"></div>
           </div>
         </Tilt>
