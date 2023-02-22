@@ -15,7 +15,7 @@
   background-position: center;
   perspective: 6000px;
   // opacity: 0.2;
-  animation: fadeIn 2s ease-out;
+  animation: fadeIn 1s ease-out;
   animation-iteration-count: 1;
 
   @keyframes fadeIn {
@@ -34,6 +34,8 @@
     max-height: 23vh;
     margin: -50px 0 30px -8vw;
     background-color: rgba(0, 0, 0, 0.2);
+    animation-delay: 1s;
+
   }
 
   a.flat-button {

@@ -22,7 +22,7 @@ const NewPortfolio = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(true);
-    }, 3000);
+    }, 2300);
   }, []);
 
   return (
