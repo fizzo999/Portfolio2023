@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Project Name: Portfolio 2023
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Author**: ✨Fizzo Pannosch✨
+**Version**: 3.0.0
 
-## Available Scripts
+## Deployed site @ https://fizzopannosch2023.netlify.app/
 
-In the project directory, you can run:
+## Overview:
 
-### `npm start`
+portfolio website that displays a information about me, Fizzo Pannosch, about my main it skills and have a contact page with working email form (implemented using email.js). This site also showcases a rocket-loader animation I built after a youtube tutorial from online-tutorialsYT and a parallax card animation that I implemented after some research how to do that in react. This si still a work in progress. To do's include a modal pop up window with a short video animation (either as a video tag with an mp4 preview file I already have - OR upload that file to youtube and use an iframe instead for faster page load and less memory demand on client).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+```
+git clone https://github.com/fizzo999/cityExplorer301n22.git
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+in order to clone this repo to your local machine.
+Create a .env file with one important variable:
 
-### `npm run build`
+```
+REACT_APP_BACKEND_SERVER=https://fizzo-city-explorer-server.herokuapp.com
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+and store that in your .env file. Be careful with the naming convention. Since this variable is used in the code it has to match in order to work
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Architecture
 
-### `npm run eject`
+React app built on Node.js
+using create-react app
+using emailjs, react-parallax-tilt, animate.css and sass 
+<!-- bootstrap@4.6.0 and react-bootstrap for quick and easy styling -->
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Change Log
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example: -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+01-10-2023 3:23pm - Application now has a fully-functional react frontend that calls (GET requests) my own deployed public facing server to get city info and display it in a visually pleasing way.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Credit and Collaborations
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+big shoutout to Slobodan Gajic for his youtube video on how to create a react app portfolio website.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+https://www.youtube.com/watch?v=ESHaail1eGc
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+big shoutout to Muhammad Irshad from OnlineTutorialsYT for his youtube video on how to create the beautiful rocket loader animatation and the glassmorphism cards.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+https://www.youtube.com/shorts/V2rnzuC6IEY
+https://www.youtube.com/watch?v=CChOgyY6mD4
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
