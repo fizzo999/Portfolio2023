@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from 'react';
-import Loader from 'react-loaders';
+// import Loader from 'react-loaders';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
 // import Card from '../Card';
@@ -46,7 +46,7 @@ const Portfolio = () => {
           })}
         </div> */}
       </div>
-      <Loader type="pacman" />
+      {/* <Loader type="pacman" /> */}
     </Fragment>
   );
 };

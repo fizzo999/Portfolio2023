@@ -176,7 +176,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 0 10px 0;
+  padding: 15px 0 10px 0;
   margin: 0;
   border-radius: 25px;
   color: rgba(255, 255, 204, 1);
@@ -186,6 +186,10 @@
   transform: translateZ(120px);
   transition: 0.9s;
   opacity: 0;
+
+  h2 {
+    font-size: large;
+  }
 }
 
 .box:hover .elements.projectName {
