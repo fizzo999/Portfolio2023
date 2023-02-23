@@ -9,6 +9,7 @@ import {
   faReact,
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import herokuIcon from '../../assets/images/heroku.jpg'
 // import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters';
 import RocketLoader from '../RocketLoader';
@@ -95,7 +96,8 @@ const About = () => {
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
-              <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+              {/* <FontAwesomeIcon icon={faAngular} color="#DD0031" /> */}
+              <img src={herokuIcon} alt="heroku company icon" style={{width: '95%', display: 'flex', }}/>
             </div>
             <div className="face2">
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />
