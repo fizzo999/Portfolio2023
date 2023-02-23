@@ -1,13 +1,15 @@
-import React, { Fragment, useState } from 'react';
-import Loader from 'react-loaders';
+import React, { Fragment, useState, useEffect } from 'react';
+// import Loader from 'react-loaders';
 import { Link } from 'react-router-dom';
 
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 import FlipCard from './FlipCard';
+import RocketLoader from '../RocketLoader';
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
+  const [isLoading, setIsLoading] = useState(true);
 
   const greetingArray = 'Hi, my name is'.split('');
   const nameArray = 'Fizzo Pannosch'.split('');
@@ -17,8 +19,15 @@ const Home = () => {
     setLetterClass('text-animate-hover');
   }, 4000);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2300);
+  }, []);
+
   return (
     <Fragment>
+           {isLoading ? <RocketLoader/> : <Fragment>
       <div className="container home-page">
         <div className="text-zone animate__animated">
           <h1>
@@ -56,8 +65,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Loader type="pacman" />
-    </Fragment>
+      {/* <Loader type="pacman" /> */}
+      </Fragment> } </Fragment>
   );
 };
 

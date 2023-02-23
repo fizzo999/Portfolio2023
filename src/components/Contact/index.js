@@ -1,18 +1,26 @@
-import { Fragment, useState, useRef } from 'react';
-import Loader from 'react-loaders';
+import { Fragment, useState, useRef, useEffect } from 'react';
+// import Loader from 'react-loaders';
 import emailjs from '@emailjs/browser';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import RocketLoader from '../RocketLoader';
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
+  const [isLoading, setIsLoading] = useState(true);
 
   const refForm = useRef();
 
   setTimeout(() => {
     setLetterClass('text-animate-hover');
   }, 3000);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2300);
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -39,6 +47,7 @@ const Contact = () => {
 
   return (
     <Fragment>
+            {isLoading ? <RocketLoader/> : <Fragment>
       <div className="conatiner contact-page">
         <div className="text-zone">
           <h1>
@@ -49,10 +58,7 @@ const Contact = () => {
             />
           </h1>
           <p className="contact-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            soluta cum blanditiis debitis, dolores a ipsum quibusdam, atque,
-            quae aperiam nobis vero eos velit ratione minus doloribus est
-            dignissimos repellendus.
+            I am looking forward to hearing from you so feel free to send me an email. I will respond within 2-3 business days.
           </p>
           <div className="contact-form">
             <form ref={refForm} onSubmit={sendEmail}>
@@ -99,7 +105,8 @@ const Contact = () => {
           <br />
           Olympia, WA <br />
           USA <br />
-          <span>friedrichpannosch@yahoo.com</span>
+          {/* <span>friedrichpannosch@yahoo.com</span> */}
+          <span>info@fizzopannosch.com</span>
         </div>
         <div className="map-wrap">
           <MapContainer center={[47.035942, -122.904445]} zoom={13}>
@@ -113,8 +120,8 @@ const Contact = () => {
           </MapContainer>
         </div>
       </div>
-      <Loader type="pacman" />
-    </Fragment>
+      {/* <Loader type="pacman" /> */}
+    </Fragment> } </Fragment>
   );
 };
 

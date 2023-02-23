@@ -1,8 +1,24 @@
+.contact-page {
+  animation: fadeIn 3s ease-out;
+  animation-iteration-count: 1;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0.5;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+
 .text-zone {
   .contact-text {
     opacity: 1;
     // background-color: yellow;
-    animation-delay: 2s;
+    animation-delay: 3s;
   }
 
 }
@@ -85,7 +101,7 @@
   color: #fff;
   font-family: 'Helvetica';
   font-size: 1.1vw;
-  font-weight: 300;  
+  font-weight: 300;
   top: 10vh;
   right: 30vw;
   width: 15.5vw;
@@ -103,7 +119,7 @@
 }
 
 .map-wrap {
-  background: rgba(8,253,216,0.1);
+  background: rgba(8, 253, 216, 0.1);
   float: right;
   width: 53vw;
   height: 100vh;

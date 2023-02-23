@@ -1,8 +1,6 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
-
-// import Tilt from 'react-vanilla-tilt';
 import Tilt from 'react-parallax-tilt';
 import './index.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -13,7 +11,7 @@ import RocketLoader from '../RocketLoader';
 
 const NewPortfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   setTimeout(() => {
     setLetterClass('text-animate-hover');
@@ -21,13 +19,13 @@ const NewPortfolio = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      setIsLoading(true);
+      setIsLoading(false);
     }, 2300);
   }, []);
 
   return (
     <Fragment>
-      {!isLoading ? <RocketLoader/> : 
+      {isLoading ? <RocketLoader/> : 
       <div className="glassCardContainer">
         <div className="portfolio-page">
           <div className="text-zone animate__animated">

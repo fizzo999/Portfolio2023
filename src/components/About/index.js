@@ -1,3 +1,5 @@
+import { Fragment, useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import {
   faAngular,
   faCss3,
@@ -7,23 +9,30 @@ import {
   faReact,
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Fragment, useState } from 'react';
-import Loader from 'react-loaders';
-import { Link } from 'react-router-dom';
+// import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters';
+import RocketLoader from '../RocketLoader';
 import './index.scss';
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
+  const [isLoading, setIsLoading] = useState(true);
 
   setTimeout(() => {
     setLetterClass('text-animate-hover');
   }, 3000);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2300);
+  }, []);
+
   const splitLetters = 'About me'.split('');
 
   return (
     <Fragment>
+     {isLoading ? <RocketLoader/> : <Fragment>
       <div className="container about-page">
         <div className="text-zone">
           <h1>
@@ -107,8 +116,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Loader type="pacman" />
-    </Fragment>
+      {/* <Loader type="pacman" /> */}
+      </Fragment> } </Fragment>
   );
 };
 
