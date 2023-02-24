@@ -88,7 +88,8 @@ const NewPortfolio = () => {
 						<source src={favoriteMoviesPreview} type="video/mp4" alt="video animation of favorite movies list app website"/>
 					</video> */}
           {/* <Iframe source={"https://www.youtube.com/watch?v=_6U3FZsxwGI&t=27s"} title={"video animation of favorite movies list app website"}/> */}
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_6U3FZsxwGI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title={"video animation of favorite movies list app website"}></iframe>
+          {/* <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_6U3FZsxwGI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title={"video animation of favorite movies list app website"}></iframe> */}
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/u6FRsxH8nK4" title={"video animation of favorite movies list app website"} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="primary" onClick={handleClose}>
