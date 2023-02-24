@@ -59,7 +59,7 @@ const NewPortfolio = () => {
             <div className="box" >
                         
               <div className="elements gh">
-                <a href="https://github.com/fizzo999/movies-list-front-end" target="_blank" rel="noreferrer" >
+                <a href="https://github.com/fizzo999?tab=repositories" target="_blank" rel="noreferrer" >
                   <FontAwesomeIcon icon={faGithub} className="fab fa-github fa-fw fa-4x fa-beat-fade githubIcon"  title="click to see it on GitHub..."/>
                 </a>
               </div>            
