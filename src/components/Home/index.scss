@@ -1,6 +1,8 @@
 .home-page {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
   opacity: 1;
   animation: fadeIn 3s ease-out;
   animation-iteration-count: 1;
@@ -19,12 +21,12 @@
   .text-zone {
     display: flex;
     flex-direction: column;
-    width: 48%;
-    margin-left: 0;
+    width: 50%;
+    // margin-left: 0;
     margin-top: 10%;
-    margin-right: 5%;
+    // margin-right: 5%;
     margin-bottom: 5%;
-    max-height: 90%;
+    // max-height: 90%;
 
   }
 
@@ -67,18 +69,19 @@
 
   .right-side-home {
     // position: absolute;
-    right: 0;
+    // right: 0;
     background-color: black;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center;
+
     width: 50%;
-    height: 90%;
-    border-radius: 10%;
+    // height: 90%;
+    // border-radius: 10%;
     margin-top: 5%;
-    margin-bottom: 5%;
+    // margin-bottom: 5%;
     margin-right: 0;
+    margin-left: 5%;
 
 
     h2 {
