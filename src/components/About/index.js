@@ -51,7 +51,7 @@ const About = () => {
               <ul>
                 <li>
                   <p>
-                    I used to own my own event photography company with hundreds
+                    I owned my own event photography company with hundreds
                     of happy return customers for over 8 years. There I learned
                     the power of creating trust with my customers by providing 
                     consistenly exceptional quality in my work.
@@ -59,7 +59,7 @@ const About = () => {
                 </li>
                 <li>
                   <p>
-                    I also used to work as a general manager for a small
+                    I also worked as a general manager for a small
                     nutritional supplement company that produced its own products
                     with sales in exess of US$1M per year. Adding to my experience
                     of quality and trust I learned about customer service, sales,
@@ -69,9 +69,9 @@ const About = () => {
                 </li>
                 <li>
                   <p>
-                    I In my most recent adventure I worked as a banquet server and
+                    In my most recent adventure I worked as a banquet server and
                     bartender. There I learned to work under tight deadlines,
-                    working in teams, communicating with event organizers, staff
+                    working in teams, communicating with event organizers and staff
                     as well clients - producing countless memorable moments with a
                     passion for quality of service - always with a smile.
                   </p>
