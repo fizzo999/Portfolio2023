@@ -8,18 +8,19 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import FavoriteMoviesListAPP from '../../assets/images/mimzy.JPG';
 import movieProjector from '../../assets/images/movie-projector.gif';
 import RocketLoader from '../RocketLoader';
-// import Button from 'react-bootstrap/Button';
-// import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
 // import favoriteMoviesPreview from '../../assets/images/favoriteMoviesListPreviewSmall.mp4'
+// import Iframe from '../Iframe';
 
 const NewPortfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
   const [isLoading, setIsLoading] = useState(true);
-  // const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false);
 
-  // const handleClose = () => setShow(false);
-  // const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   setTimeout(() => {
     setLetterClass('text-animate-hover');
@@ -35,7 +36,7 @@ const NewPortfolio = () => {
     <Fragment>
       {isLoading ? 
         <RocketLoader/> : 
-        <div className="glassCardContainer">
+        <div className="glassCardContainer" title="hover over the card to see MORE...">
           <div className="portfolio-page">
             <div className="text-zone animate__animated">
               <h1>
@@ -68,8 +69,8 @@ const NewPortfolio = () => {
                 </a>
               </div>
               <div className="elements projectName">
-                {/* <h2 title="click to learn more..." onClick={handleShow} className="modalButton">Favorite Movies List APP</h2> */}
-                <h2 className="modalButton">Favorite Movies List APP</h2>
+                <h2 title="click to learn more..." onClick={handleShow} className="modalButton">Favorite Movies List APP</h2>
+                {/* <h2 className="modalButton">Favorite Movies List APP</h2> */}
               </div>
               <div className="card"><img src={movieProjector} alt="a movie projector running and displaying the opening title on a screen"/>  </div>
             </div>
@@ -77,23 +78,24 @@ const NewPortfolio = () => {
           <Link to="/contact" className="flat-button">
               CONTACT ME
           </Link>
-          {/* <Button variant="primary">Primary</Button>
-          <Modal show={show} onHide={handleClose} size="lg" aria-labelledby="contained-modal-title-vcenter"
-      centered>
-        <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal show={show} onHide={handleClose} size="xl" aria-labelledby="contained-modal-title-vcenter"
+      centered backdropClassName="projectModalBackdrop">
+        <Modal.Header>
+          <h4>Favorite Movie List App</h4>
         </Modal.Header>
         <Modal.Body>
-          <video autoplay loop muted plays-inline width="100%">
+          {/* <video autoplay loop muted plays-inline width="100%">
 						<source src={favoriteMoviesPreview} type="video/mp4" alt="video animation of favorite movies list app website"/>
-					</video>
+					</video> */}
+          {/* <Iframe source={"https://www.youtube.com/watch?v=_6U3FZsxwGI&t=27s"} title={"video animation of favorite movies list app website"}/> */}
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_6U3FZsxwGI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title={"video animation of favorite movies list app website"}></iframe>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="primary" onClick={handleClose}>
             Close
           </Button>
         </Modal.Footer>
-      </Modal> */}
+      </Modal>
         </div>}
     </Fragment>
   )

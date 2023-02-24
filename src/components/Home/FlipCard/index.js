@@ -11,16 +11,18 @@ const FlipCard = () => {
           <div className="about-card">
             <div className="side Fizzo_001"></div>
             <div className="side back">
-              <div>
+              <div className="aboutMeText">
                 <h3>
                   I am a Fullstack JavaScript developer with a background in
+                </h3>
                   <ul>
-                    <li>Hospitality,</li>
-                    <li>Production Managment,</li>
-                    <li>Digital Event Photography,</li>
-                    <li>Nutrition and </li>
-                    <li>Gardening.</li>
+                    <li><h3>Hospitality,</h3></li>
+                    <li><h3>Production Managment,</h3></li>
+                    <li><h3>Digital Event Photography,</h3></li>
+                    <li><h3>Nutrition and </h3></li>
+                    <li><h3>Gardening.</h3></li>
                   </ul>
+                  <h3>
                   I am passionate about writing accessible, intuitive, and easy
                   to read code. I am building products and services that are
                   beautiful, inspiring and are future forward.

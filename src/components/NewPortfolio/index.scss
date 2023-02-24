@@ -40,7 +40,8 @@
 
   a.flat-button {
     margin-top: 30px;
-    border-radius: 20px;
+    padding: 20px 30px;
+    border-radius: 30px;
   }
 }
 
@@ -195,4 +196,112 @@
 .box:hover .elements.projectName {
   top: 235px;
   opacity: 1;
+}
+
+.projectModalBackdrop {
+  background: rgb(0, 0, 0) !important;
+  opacity: 1 !important;
+  // background: none !important;
+}
+
+.modal-content {
+  // background: linear-gradient(#42abff, #ff4f8b, #ffeb3f) !important;
+  background: #555 !important;
+  // box-shadow: 0 0 5px #fff,
+  //   0 0 10px #fff,
+  //   0 0 20px blue,
+  //   0 0 30px blue,
+  //   0 0 40px blue,
+  //   0 0 55px blue,
+  //   0 0 70px blue;
+  color: white !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 25px !important;
+  margin-left: 7vw;
+  animation: glowingShadowBlue 3s infinite;
+
+  @keyframes glowingShadowBlue {
+    0% {
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0),
+        0 0 10px rgba(255, 255, 255, 0),
+        0 0 20px rgba(0, 0, 255, 0),
+        0 0 30px rgba(0, 0, 255, 0),
+        0 0 40px rgba(0, 0, 255, 0),
+        0 0 55px rgba(0, 0, 255, 0),
+        0 0 70px rgba(0, 0, 255, 0);
+
+    }
+
+    50% {
+      box-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px blue,
+        0 0 30px blue,
+        0 0 40px blue,
+        0 0 55px blue,
+        0 0 70px blue;
+
+    }
+
+    100% {
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0),
+        0 0 10px rgba(255, 255, 255, 0),
+        0 0 20px rgba(0, 0, 255, 0),
+        0 0 30px rgba(0, 0, 255, 0),
+        0 0 40px rgba(0, 0, 255, 0),
+        0 0 55px rgba(0, 0, 255, 0),
+        0 0 70px rgba(0, 0, 255, 0);
+
+    }
+
+  }
+
+  // filter: blur(10px) !important;
+  .modal-header,
+  .modal-body,
+  .modal-footer {
+    width: 100%;
+  }
+
+  .modal-header {
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // margin: 0 auto;
+    h4 {
+      font-size: 3rem;
+      margin: 0.5rem 0 -1rem 0;
+      color: rgba(255, 255, 204, 1);
+      text-shadow: 0 0 5px #fff;
+      text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px rgba(255, 255, 204, 0.5),
+        0 0 30px rgba(255, 255, 204, 0.25),
+        0 0 40px rgba(255, 255, 204, 0.25),
+        0 0 55px rgba(255, 255, 204, 0.25),
+        0 0 70px rgba(255, 255, 204, 0.25);
+    }
+  }
+
+  .modal-body {
+    height: 60vh;
+
+    iframe {
+      border-radius: 25px;
+    }
+  }
+
+  .modal-footer {
+    display: flex !important;
+    justify-content: center !important;
+    border-top: none;
+
+    .btn {
+      width: 15%;
+    }
+  }
 }

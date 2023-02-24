@@ -3,7 +3,7 @@ h1,
 h2,
 h4 {
   text-align: center;
-  margin: 0.5em 0;
+  // margin: 0.5em 0;
 }
 
 h2 {
@@ -20,6 +20,7 @@ h2 {
 .Fizzo_001 {
   background-image: url('../../../assets/images/FizzoPannosch_Thank_You.gif');
   background-size: cover;
+  // border-radius: 50%;
   border-radius: 50%;
   border: thick black solid;
 }
@@ -53,6 +54,24 @@ h2 {
   width: 100%;
   border-radius: 10px;
   display: flex;
+
+  h3 {
+    font-family: 'Verdana';
+    font-size: 14px;
+    font-weight: 600;
+    // line-height: 1.2rem;
+    text-align: left;
+  }
+
+  h3:first-child {
+    padding-top: 20px;
+  }
+
+  .side div ul li h3 {
+    padding-top: 2px;
+
+  }
+
 }
 
 .about-card:hover {
@@ -74,8 +93,8 @@ h2 {
   position: relative;
   font-family: 'Coolvetica';
   letter-spacing: 0.15rem;
-  font-size: 1rem;
-  line-height: 1.4rem;
+  font-size: 1.4rem;
+  line-height: 0.9rem;
   text-align: justify;
   padding: 0.5rem 2rem;
 }
